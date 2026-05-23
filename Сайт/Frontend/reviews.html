@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 +7 (999) 123-45-67</span>
+                    <span>✉️ info@medcenter.ru</span>
+                </div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link active">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container"><a href="index.html">Главная</a><span>/</span>Отзывы</div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Отзывы пациентов</h1>
+
+            <!-- Статистика -->
+            <div class="stats-block">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; align-items: center;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; font-weight: 700; color: #1e88e5;">4.8</div>
+                        <div style="color: #ffc107; font-size: 24px;">⭐⭐⭐⭐⭐</div>
+                        <div style="color: #78909c;">На основе 124 отзывов</div>
+                    </div>
+                    <div>
+                        <div style="margin-bottom: 10px;">⭐⭐⭐⭐⭐ 98 отзывов<div class="rating-bar"><div class="rating-fill" style="width: 79%;"></div></div></div>
+                        <div style="margin-bottom: 10px;">⭐⭐⭐⭐ 18 отзывов<div class="rating-bar"><div class="rating-fill" style="width: 15%;"></div></div></div>
+                        <div style="margin-bottom: 10px;">⭐⭐⭐ 5 отзывов<div class="rating-bar"><div class="rating-fill" style="width: 4%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Список отзывов -->
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div>
+                            <div class="review-author">Алексей С.</div>
+                            <div class="review-date">15.11.2024</div>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-doctor"><strong>Врач:</strong> Иванов А.П. - Терапевт</div>
+                    <p class="review-text">Отличный врач! Очень внимательный, всё подробно объяснил. Назначил лечение, которое действительно помогло.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div>
+                            <div class="review-author">Мария И.</div>
+                            <div class="review-date">20.11.2024</div>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-doctor"><strong>Врач:</strong> Петрова Е.С. - Кардиолог</div>
+                    <p class="review-text">Прекрасный кардиолог! Очень грамотный специалист, успокоила, всё разъяснила.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div>
+                            <div class="review-author">Дмитрий П.</div>
+                            <div class="review-date">25.11.2024</div>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-doctor"><strong>Врач:</strong> Сидоров М.А. - Невролог</div>
+                    <p class="review-text">Хороший невролог. Помог с болями в спине. Единственный минус - пришлось немного подождать приёма.</p>
+                </div>
+            </div>
+
+            <!-- Кнопка -->
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn btn-primary" onclick="alert('Спасибо! Ваш отзыв будет опубликован после проверки.')">✍️ Оставить отзыв</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3 class="footer-title">МедЦентр</h3><p>Современная медицина.</p></div>
+                <div><h3 class="footer-title">Навигация</h3><ul class="footer-links"><li><a href="services.html">Услуги</a></li><li><a href="doctors.html">Врачи</a></li></ul></div>
+                <div><h3 class="footer-title">Контакты</h3><ul class="footer-links"><li>📞 +7 (999) 123-45-67</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Медицинский центр "Здоровье"</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

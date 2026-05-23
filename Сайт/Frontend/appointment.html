@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на приём - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 +7 (999) 123-45-67</span>
+                    <span>✉️ info@medcenter.ru</span>
+                </div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary active">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a><span>/</span>Запись на приём
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Запись на приём</h1>
+            
+            <form class="appointment-form" onsubmit="alert('✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.'); return false;">
+                <div class="form-group">
+                    <label class="form-label" for="name">Ваше имя *</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Телефон *</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="+7 (999) 123-45-67" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="doctor">Врач</label>
+                    <select id="doctor" class="form-select">
+                        <option value="">Выберите врача</option>
+                        <option>Иванов А.П. - Терапевт</option>
+                        <option>Петрова Е.С. - Кардиолог</option>
+                        <option>Сидоров М.А. - Невролог</option>
+                        <option>Козлова А.В. - Педиатр</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="service">Услуга</label>
+                    <select id="service" class="form-select">
+                        <option value="">Выберите услугу</option>
+                        <option>Первичный прием терапевта - 2 000 ₽</option>
+                        <option>Консультация кардиолога - 2 500 ₽</option>
+                        <option>Консультация невролога - 2 500 ₽</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="date">Желаемая дата и время</label>
+                    <input type="datetime-local" id="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="comment">Комментарий</label>
+                    <textarea id="comment" class="form-textarea" placeholder="Опишите причину обращения или укажите удобное время"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 18px; padding: 15px;">📅 Отправить заявку</button>
+                <p style="text-align: center; margin-top: 20px; color: #78909c; font-size: 14px;">* Обязательные поля<br>После отправки администратор свяжется с вами</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3 class="footer-title">МедЦентр</h3><p>Современная медицина с заботой о каждом пациенте.</p></div>
+                <div>
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="doctors.html">Врачи</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79991234567">📞 +7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:info@medcenter.ru">✉️ info@medcenter.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Медицинский центр "Здоровье"</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

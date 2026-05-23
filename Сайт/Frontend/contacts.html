@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top"><div class="container"><div class="header-contact"><span>📞 +7 (999) 123-45-67</span></div></div></div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs"><div class="container"><a href="index.html">Главная</a><span>/</span>Контакты</div></div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Контакты</h1>
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-text"><h4>Адрес</h4><p>г. Москва, ул. Медицинская, д. 15</p></div></div>
+                    <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-text"><h4>Телефоны</h4><p>+7 (999) 123-45-67</p></div></div>
+                    <div class="contact-item"><div class="contact-icon">✉️</div><div class="contact-text"><h4>Email</h4><p>info@medcenter.ru</p></div></div>
+                    <div class="contact-item"><div class="contact-icon">🕐</div><div class="contact-text"><h4>Режим работы</h4><p>Пн-Пт: 8:00-20:00<br>Сб: 9:00-18:00<br>Вс: выходной</p></div></div>
+                </div>
+                <div>
+                    <div class="contact-form">
+                        <h2 style="margin-bottom: 25px;">Остались вопросы?</h2>
+                        <form onsubmit="alert('✅ Сообщение отправлено!'); return false;">
+                            <div class="form-group"><label class="form-label">Имя *</label><input type="text" class="form-control" required></div>
+                            <div class="form-group"><label class="form-label">Телефон</label><input type="tel" class="form-control"></div>
+                            <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-control" required></div>
+                            <div class="form-group"><label class="form-label">Тема</label><select class="form-select"><option>Запись на приём</option><option>Вопрос по услугам</option><option>Другое</option></select></div>
+                            <div class="form-group"><label class="form-label">Сообщение *</label><textarea class="form-textarea" required></textarea></div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="container">
+            <h2 class="section-title">Как нас найти</h2>
+            <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.1234567890!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIxLjAiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><div class="footer-bottom"><p>&copy; 2024 Медицинский центр "Здоровье"</p></div></div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

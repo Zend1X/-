@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact"><span>📞 +7 (999) 123-45-67</span><span>✉️ info@medcenter.ru</span></div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link active">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs"><div class="container"><a href="index.html">Главная</a><span>/</span>Новости</div></div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Новости и статьи</h1>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div style="height: 200px; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; font-size: 48px;">📰</div>
+                    <div class="news-content">
+                        <p class="news-date">📅 01.12.2024 | ✍️ Администратор</p>
+                        <h3 class="news-title">Открытие нового отделения</h3>
+                        <p class="news-announce">Мы рады сообщить об открытии нового кардиологического отделения</p>
+                        <a href="news-detail.html" class="btn btn-outline">Читать далее</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div style="height: 200px; background: linear-gradient(135deg, #764ba2, #667eea); display: flex; align-items: center; justify-content: center; font-size: 48px;">📰</div>
+                    <div class="news-content">
+                        <p class="news-date">📅 05.12.2024 | ✍️ Администратор</p>
+                        <h3 class="news-title">Профилактика гриппа и ОРВИ</h3>
+                        <p class="news-announce">Советы врача: как защитить себя и близких от простуды</p>
+                        <a href="news-detail.html" class="btn btn-outline">Читать далее</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div style="height: 200px; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; font-size: 48px;">📰</div>
+                    <div class="news-content">
+                        <p class="news-date">📅 10.12.2024 | ✍️ Администратор</p>
+                        <h3 class="news-title">Новое оборудование</h3>
+                        <p class="news-announce">Установлен современный МРТ-томограф</p>
+                        <a href="news-detail.html" class="btn btn-outline">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <span class="active">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">→</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3 class="footer-title">МедЦентр</h3><p>Современная медицина.</p></div>
+                <div><h3 class="footer-title">Навигация</h3><ul class="footer-links"><li><a href="services.html">Услуги</a></li><li><a href="doctors.html">Врачи</a></li></ul></div>
+                <div><h3 class="footer-title">Контакты</h3><ul class="footer-links"><li>📞 +7 (999) 123-45-67</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Медицинский центр "Здоровье"</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

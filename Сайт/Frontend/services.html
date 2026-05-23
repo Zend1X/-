@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 +7 (999) 123-45-67</span>
+                    <span>✉️ info@medcenter.ru</span>
+                </div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link active">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a><span>/</span>Услуги
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Наши услуги</h1>
+            
+            <!-- Терапия -->
+            <div style="margin-bottom: 60px;">
+                <h2 style="margin-bottom: 30px;">Терапия</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">Первичный прием терапевта</h3>
+                            <p class="service-desc">Консультация врача-терапевта с осмотром и сбором анамнеза</p>
+                            <div class="service-footer">
+                                <span class="service-price">2 000 ₽</span>
+                                <span class="service-duration">⏱ 30 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">Повторный прием терапевта</h3>
+                            <p class="service-desc">Повторная консультация терапевта</p>
+                            <div class="service-footer">
+                                <span class="service-price">1 500 ₽</span>
+                                <span class="service-duration">⏱ 20 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">Профилактический осмотр</h3>
+                            <p class="service-desc">Комплексный профилактический осмотр</p>
+                            <div class="service-footer">
+                                <span class="service-price">3 000 ₽</span>
+                                <span class="service-duration">⏱ 45 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кардиология -->
+            <div style="margin-bottom: 60px;">
+                <h2 style="margin-bottom: 30px;">Кардиология</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">Консультация кардиолога</h3>
+                            <p class="service-desc">Прием врача-кардиолога с ЭКГ</p>
+                            <div class="service-footer">
+                                <span class="service-price">2 500 ₽</span>
+                                <span class="service-duration">⏱ 40 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">ЭКГ</h3>
+                            <p class="service-desc">Электрокардиография</p>
+                            <div class="service-footer">
+                                <span class="service-price">800 ₽</span>
+                                <span class="service-duration">⏱ 15 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">УЗИ сердца</h3>
+                            <p class="service-desc">Эхокардиография</p>
+                            <div class="service-footer">
+                                <span class="service-price">3 500 ₽</span>
+                                <span class="service-duration">⏱ 30 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Стоматология -->
+            <div style="margin-bottom: 60px;">
+                <h2 style="margin-bottom: 30px;">Стоматология</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">Лечение кариеса</h3>
+                            <p class="service-desc">Лечение кариеса зуба</p>
+                            <div class="service-footer">
+                                <span class="service-price">3 500 ₽</span>
+                                <span class="service-duration">⏱ 45 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-content">
+                            <h3 class="service-title">Профессиональная чистка</h3>
+                            <p class="service-desc">Профессиональная гигиена полости рта</p>
+                            <div class="service-footer">
+                                <span class="service-price">3 000 ₽</span>
+                                <span class="service-duration">⏱ 40 мин.</span>
+                            </div>
+                            <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-title">МедЦентр</h3>
+                    <p>Современная медицина с заботой о каждом пациенте.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Все услуги</a></li>
+                        <li><a href="doctors.html">Наши врачи</a></li>
+                        <li><a href="appointment.html">Запись на приём</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79991234567">📞 +7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:info@medcenter.ru">✉️ info@medcenter.ru</a></li>
+                        <li><a href="contacts.html">📍 г. Москва, ул. Медицинская, 15</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Медицинский центр "Здоровье". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

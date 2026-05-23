@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иванов А.П. - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 +7 (999) 123-45-67</span>
+                    <span>✉️ info@medcenter.ru</span>
+                </div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link active">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a><span>/</span>
+            <a href="doctors.html">Врачи</a><span>/</span>
+            Иванов Александр Петрович
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="doctor-detail">
+                <div style="text-align: center;">
+                    <img src="images/doctors/doctor1.jpg" alt="Иванов А.П." class="doctor-detail-photo" onerror="this.style.background='#e0e0e0'">
+                    <a href="appointment.html" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Записаться на приём</a>
+                </div>
+                <div>
+                    <h1 class="doctor-detail-name">Иванов Александр Петрович</h1>
+                    <p class="doctor-detail-specialty">Терапевт</p>
+                    <p class="doctor-detail-experience">Стаж работы: <strong>20 лет</strong></p>
+                    
+                    <div class="doctor-detail-bio">
+                        <h3 style="margin-bottom: 15px;">О враче</h3>
+                        <p>Опытный терапевт с 20-летним стажем. Проводит комплексную диагностику и лечение широкого спектра заболеваний. Регулярно повышает квалификацию на международных конференциях.</p>
+                        <p style="margin-top: 15px;">Образование: Московский государственный медицинский университет им. И.М. Сеченова.</p>
+                        <p>Специализация: диагностика и лечение заболеваний внутренних органов, профилактическая медицина.</p>
+                    </div>
+
+                    <h3 style="margin-bottom: 20px;">Услуги врача</h3>
+                    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                        <div class="service-card">
+                            <div class="service-content">
+                                <h4>Первичный прием терапевта</h4>
+                                <p style="color: #78909c; margin-bottom: 15px; font-size: 14px;">Консультация с осмотром</p>
+                                <div class="service-footer">
+                                    <span class="service-price">2 000 ₽</span>
+                                    <span class="service-duration">⏱ 30 мин.</span>
+                                </div>
+                                <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-content">
+                                <h4>Профилактический осмотр</h4>
+                                <p style="color: #78909c; margin-bottom: 15px; font-size: 14px;">Комплексный осмотр</p>
+                                <div class="service-footer">
+                                    <span class="service-price">3 000 ₽</span>
+                                    <span class="service-duration">⏱ 45 мин.</span>
+                                </div>
+                                <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3 class="footer-title">МедЦентр</h3><p>Современная медицина с заботой о каждом пациенте.</p></div>
+                <div>
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Все услуги</a></li>
+                        <li><a href="doctors.html">Наши врачи</a></li>
+                        <li><a href="appointment.html">Запись на приём</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79991234567">📞 +7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:info@medcenter.ru">✉️ info@medcenter.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Медицинский центр "Здоровье"</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Врачи - Медицинский центр "Здоровье"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 +7 (999) 123-45-67</span>
+                    <span>✉️ info@medcenter.ru</span>
+                </div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link active">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a><span>/</span>Врачи
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Наши врачи</h1>
+            
+            <div style="margin-bottom: 60px;">
+                <h2 style="margin-bottom: 30px;">Терапевты</h2>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <img src="images/doctors/doctor1.jpg" alt="Иванов А.П." class="doctor-photo" onerror="this.style.background='#e0e0e0'">
+                        <h3 class="doctor-name">Иванов Александр Петрович</h3>
+                        <p class="doctor-specialty">Терапевт</p>
+                        <p class="doctor-experience">Стаж: 20 лет</p>
+                        <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                        <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 60px;">
+                <h2 style="margin-bottom: 30px;">Кардиологи</h2>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <img src="images/doctors/doctor2.jpg" alt="Петрова Е.С." class="doctor-photo" onerror="this.style.background='#e0e0e0'">
+                        <h3 class="doctor-name">Петрова Елена Сергеевна</h3>
+                        <p class="doctor-specialty">Кардиолог</p>
+                        <p class="doctor-experience">Стаж: 15 лет</p>
+                        <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                        <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 60px;">
+                <h2 style="margin-bottom: 30px;">Неврологи</h2>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <img src="images/doctors/doctor3.jpg" alt="Сидоров М.А." class="doctor-photo" onerror="this.style.background='#e0e0e0'">
+                        <h3 class="doctor-name">Сидоров Михаил Александрович</h3>
+                        <p class="doctor-specialty">Невролог</p>
+                        <p class="doctor-experience">Стаж: 12 лет</p>
+                        <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                        <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3 class="footer-title">МедЦентр</h3><p>Современная медицина с заботой о каждом пациенте.</p></div>
+                <div>
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Все услуги</a></li>
+                        <li><a href="doctors.html">Наши врачи</a></li>
+                        <li><a href="appointment.html">Запись на приём</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79991234567">📞 +7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:info@medcenter.ru">✉️ info@medcenter.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Медицинский центр "Здоровье"</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

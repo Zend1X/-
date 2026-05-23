@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский центр "Здоровье" - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 +7 (999) 123-45-67</span>
+                    <span>✉️ info@medcenter.ru</span>
+                </div>
+                <div>🕐 Пн-Пт: 8:00-20:00 | Сб: 9:00-18:00</div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">Мед<span>Центр</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav" id="mainNav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Врачи</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="btn btn-primary">Записаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Забота о вашем здоровье</h1>
+            <p>Профессиональная медицинская помощь с использованием современного оборудования и индивидуального подхода</p>
+            <a href="appointment.html" class="btn btn-primary">Записаться на приём</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍⚕️</div>
+                    <h3 class="feature-title">Опытные врачи</h3>
+                    <p>Специалисты с многолетним стажем и высокой квалификацией</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3 class="feature-title">Современное оборудование</h3>
+                    <p>Используем передовые технологии диагностики и лечения</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3 class="feature-title">Индивидуальный подход</h3>
+                    <p>Внимательное отношение к каждому пациенту</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3 class="feature-title">Удобный график</h3>
+                    <p>Работаем без выходных, запись онлайн в любое время</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3 class="service-title">Первичный прием терапевта</h3>
+                        <p class="service-desc">Консультация врача-терапевта с осмотром и сбором анамнеза</p>
+                        <div class="service-footer">
+                            <span class="service-price">2 000 ₽</span>
+                            <span class="service-duration">⏱ 30 мин.</span>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3 class="service-title">Консультация кардиолога</h3>
+                        <p class="service-desc">Прием врача-кардиолога с ЭКГ</p>
+                        <div class="service-footer">
+                            <span class="service-price">2 500 ₽</span>
+                            <span class="service-duration">⏱ 40 мин.</span>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3 class="service-title">Консультация невролога</h3>
+                        <p class="service-desc">Прием врача-невролога с осмотром</p>
+                        <div class="service-footer">
+                            <span class="service-price">2 500 ₽</span>
+                            <span class="service-duration">⏱ 40 мин.</span>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary" style="margin-top: 15px; width: 100%;">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn btn-outline">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Наши специалисты</h2>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <img src="images/doctors/doctor1.jpg" alt="Иванов А.П." class="doctor-photo" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23e0e0e0%22 width=%22200%22 height=%22200%22/><text fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2260%22>👨‍⚕️</text></svg>'">
+                    <h3 class="doctor-name">Иванов Александр Петрович</h3>
+                    <p class="doctor-specialty">Терапевт</p>
+                    <p class="doctor-experience">Стаж: 20 лет</p>
+                    <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                    <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/doctors/doctor2.jpg" alt="Петрова Е.С." class="doctor-photo" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23e0e0e0%22 width=%22200%22 height=%22200%22/><text fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2260%22>👩‍⚕️</text></svg>'">
+                    <h3 class="doctor-name">Петрова Елена Сергеевна</h3>
+                    <p class="doctor-specialty">Кардиолог</p>
+                    <p class="doctor-experience">Стаж: 15 лет</p>
+                    <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                    <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/doctors/doctor3.jpg" alt="Сидоров М.А." class="doctor-photo" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23e0e0e0%22 width=%22200%22 height=%22200%22/><text fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2260%22>👨‍⚕️</text></svg>'">
+                    <h3 class="doctor-name">Сидоров Михаил Александрович</h3>
+                    <p class="doctor-specialty">Невролог</p>
+                    <p class="doctor-experience">Стаж: 12 лет</p>
+                    <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                    <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/doctors/doctor4.jpg" alt="Козлова А.В." class="doctor-photo" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23e0e0e0%22 width=%22200%22 height=%22200%22/><text fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2260%22>👩‍⚕️</text></svg>'">
+                    <h3 class="doctor-name">Козлова Анна Владимировна</h3>
+                    <p class="doctor-specialty">Педиатр</p>
+                    <p class="doctor-experience">Стаж: 10 лет</p>
+                    <a href="doctor.html" class="btn btn-outline">Подробнее</a>
+                    <a href="appointment.html" class="btn btn-primary">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Новости и статьи</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📰</div>
+                    <div class="news-content">
+                        <p class="news-date">📅 01.12.2024 | ✍️ Администратор</p>
+                        <h3 class="news-title">Открытие нового отделения</h3>
+                        <p class="news-announce">Мы рады сообщить об открытии нового кардиологического отделения</p>
+                        <a href="news-detail.html" class="btn btn-outline">Читать далее</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div style="height: 200px; background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📰</div>
+                    <div class="news-content">
+                        <p class="news-date">📅 05.12.2024 | ✍️ Администратор</p>
+                        <h3 class="news-title">Профилактика гриппа и ОРВИ</h3>
+                        <p class="news-announce">Советы врача: как защитить себя и близких от простуды</p>
+                        <a href="news-detail.html" class="btn btn-outline">Читать далее</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📰</div>
+                    <div class="news-content">
+                        <p class="news-date">📅 10.12.2024 | ✍️ Администратор</p>
+                        <h3 class="news-title">Новое оборудование</h3>
+                        <p class="news-announce">Установлен современный МРТ-томограф</p>
+                        <a href="news-detail.html" class="btn btn-outline">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <h1>Запишитесь на приём прямо сейчас</h1>
+            <p>Оставьте заявку, и мы подберем удобное время для визита</p>
+            <a href="appointment.html" class="btn btn-primary" style="background: white; color: #667eea; font-size: 18px; padding: 15px 40px;">Записаться</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-title">МедЦентр</h3>
+                    <p>Современная медицина с заботой о каждом пациенте. Мы используем передовые технологии и индивидуальный подход.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Все услуги</a></li>
+                        <li><a href="doctors.html">Наши врачи</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="appointment.html">Запись на приём</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79991234567">📞 +7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:info@medcenter.ru">✉️ info@medcenter.ru</a></li>
+                        <li><a href="contacts.html">📍 г. Москва, ул. Медицинская, 15</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">О центре</h3>
+                    <ul class="footer-links">
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="appointment.html">Записаться</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Медицинский центр "Здоровье". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
